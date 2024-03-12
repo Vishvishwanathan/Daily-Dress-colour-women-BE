@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 app.use(bodyparser.json())
 const PORT = 5000;
-
+ console.log(`Server started at sucssesfully:${PORT}`)
 
 // ENABLE CORS
 app.use(cors());
@@ -16,6 +16,6 @@ app.use(cors());
 // Use the defined router for all routes
 app.use('/api', AppRouter);
 
-app.listen(PORT,"0.0.0.0", () => {
+app.listen(PORT, () => {
     console.log(`Server started at sucssesfully:${PORT}`)
 });
