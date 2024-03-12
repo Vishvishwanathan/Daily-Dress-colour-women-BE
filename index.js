@@ -10,10 +10,6 @@ app.use(bodyparser.json())
 const PORT = 5000;
  console.log(`Server started at sucssesfully:${PORT}`)
 
-app.get('../router/users.js', function(req, res){
-    res.send("Hello from the 'test' URL");
-});
-
 // ENABLE CORS
 app.use(cors());
 
