@@ -14,7 +14,7 @@ const PORT = 5000;
 app.use(cors());
 
 // Use the defined router for all routes
-app.use('/api', AppRouter);
+app.use('/', AppRouter);
 
 app.listen(PORT, () => {
     console.log(`Server started at sucssesfully:${PORT}`)
